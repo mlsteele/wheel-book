@@ -4,7 +4,10 @@
 <head>
 
 <link rel="stylesheet" href="style.css"/>
-<script src="script/3-wheel.js"></script>
+<script src="vendor/jquery.js"></script>
+<script src="vendor/paper.js"></script>
+<script src="vendor/coffee-script.js"></script>
+<script type="text/coffeescript" src="script/3-wheel.coffee"></script>
 
 </head>
 <body>
@@ -63,7 +66,7 @@ that will be absolutely straight.
 <div class="dialogue-line"><span class="speaker">Authors</span> O.K. Let's dig into it and you'll see what we mean. Let's imagine this old stone age guy pulling a big rock.</div>
 
 <div class="illustration">
-<img src="1-pulling-rock.svg" width="400px" alt="STONEY pulling a a rock, puffing and panting.">
+<img src="images/1-pulling-rock.svg" width="400px" alt="STONEY pulling a a rock, puffing and panting.">
 </div>
 
 <div class="dialogue-line"><span class="speaker">Critic</span> He's having trouble.</div>
@@ -71,7 +74,7 @@ that will be absolutely straight.
 <div class="dialogue-line"><span class="speaker">Authors</span> Well, if he only would invent the wheel he could put the rock on a cart and pull it along with the greatest of ease--</div>
 
 <div class="illustration">
-<img src="2-pulling-cart.svg" width="400px" alt="STONEY pulling a cart, whistling.">
+<img src="images/2-pulling-cart.svg" width="400px" alt="STONEY pulling a cart, whistling.">
 </div>
 
 <div class="dialogue-line"><span class="speaker">Critic</span> Sure, everybody knows that. So what?</div>
@@ -90,7 +93,7 @@ that will be absolutely straight.
 
 <div class="dialogue-line"><span class="speaker">Authors</span> Cool it, Critic. We're going to do an EXPERIMENT.
 <br>
-Here's a wheel with three spots.
+Here's a wheel with three spots.<br>
 A red triangle<br>
 A green square<br>
 A blue circle
@@ -98,8 +101,7 @@ A blue circle
 
 
 <div class="illustration">
-ILLUSTRATION
-alt="picture of wheel"
+<canvas id="3-wheel-canvas" resize="true" alt="picture of wheel"></canvas>
 </div>
 
 We are going to roll the wheel a little. Watch the spots!
