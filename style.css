@@ -1,0 +1,43 @@
+body{
+  color: #222;
+  font: 1em Georgia, serif;
+  line-height: 1.5em;
+  padding-bottom: 4em;
+}
+
+main{
+  max-width: 800px;
+  padding: 1em 35px 0 35px;
+  margin: 0 auto;
+}
+
+.clearbar{
+  clear: both;
+}
+
+.toc{
+  float: left;
+}
+
+.poem{
+  float: right;
+}
+
+.dialogue-line{
+  margin-bottom: 0.5em;
+}
+
+.speaker{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.speaker:after{
+  content: ":";
+}
+
+.illustration{
+  width: 400px;
+  margin: 0 auto;
+}
